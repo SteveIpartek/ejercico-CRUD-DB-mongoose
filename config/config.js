@@ -1,4 +1,3 @@
-// config/config.js
 const mongoose = require('mongoose');
 require('dotenv').config(); // Asegúrate de cargar las variables de entorno
 
