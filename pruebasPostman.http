@@ -1,0 +1,41 @@
+# --- Endpoint para Crear una Tarea (POST) ---
+POST http://localhost:8080/tasks/create
+Content-Type: application/json
+
+{
+    "title": "Aprender REST Client"
+}
+
+###
+
+# --- Endpoint para Obtener Todas las Tareas (GET) ---
+GET http://localhost:8080/tasks/
+
+###
+
+# --- Endpoint para Buscar Tarea por ID (GET) ---
+# Sustituye <TASK_ID> por un ID real de una tarea creada
+GET http://localhost:8080/tasks/id/<TASK_ID>
+
+###
+
+# --- Endpoint para Marcar Tarea como Completada (PUT) ---
+# Sustituye <TASK_ID> por un ID real de una tarea
+PUT http://localhost:8080/tasks/markAsCompleted/<TASK_ID>
+
+###
+
+# --- Endpoint para Actualizar Título de Tarea (PUT) ---
+# Sustituye <TASK_ID> por un ID real de una tarea
+PUT http://localhost:8080/tasks/id/<TASK_ID>
+Content-Type: application/json
+
+{
+    "title": "Dominar REST Client en VS Code"
+}
+
+###
+
+# --- Endpoint para Eliminar Tarea (DELETE) ---
+# Sustituye <TASK_ID> por un ID real de una tarea
+DELETE http://localhost:8080/tasks/id/<TASK_ID>
