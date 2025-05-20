@@ -1,17 +1,16 @@
-// models/Task.js
 const mongoose = require('mongoose');
 
 const TaskSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true, // Una tarea debe tener un título
-        trim: true,      // Elimina espacios en blanco al inicio y al final
+        required: true, 
+        trim: true,      
     },
     completed: {
         type: Boolean,
-        default: false, // Por defecto, una tarea no está completada
+        default: false, 
     },
-}, { timestamps: true }); // Añade `createdAt` y `updatedAt` automáticamente
+}, { timestamps: true });
 
 const Task = mongoose.model('Task', TaskSchema);
 
